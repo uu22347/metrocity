@@ -18,16 +18,23 @@
                 <nav>
                     <ul id="gnb">
                         <li><a href="#"><img src="./images/visionary_logo.png" alt="메트로시티_비저너리"></a>
-                            <ul class="gnb_depth2">
-                                <li><a href="#">METROCITY'S VISIONARY</a>
-                                    <ul class="gnb_depth3">
-                                        <li><a href="#">VISIONARY</a></li>
-                                        <li><a href="#">MOTIF</a></li>
-                                        <li><a href="#">DEBUTANT</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">METROCITY'S DIAMOND</a></li>
-                            </ul>
+                            <div class="visionary_sub_menu">
+                                <ul class="gnb_depth2">
+                                    <li><a href="#">METROCITY'S VISIONARY</a>
+                                        <ul class="gnb_depth3">
+                                            <li><a href="#">VISIONARY</a></li>
+                                            <li><a href="#">MOTIF</a></li>
+                                            <li><a href="#">DEBUTANT</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">METROCITY'S DIAMOND</a></li>
+                                </ul>
+                                <div class="visionary_img">
+                                    <a href="#"><img src="./images/submenu_visionary.jpg" alt="visionary"></a>
+                                    <a href="#"><img src="./images/submenu_motif.jpg" alt="motif"></a>
+                                    <a href="#"><img src="./images/submenu_debutante.jpg" alt="debutante"></a>
+                                </div>
+                            </div>
                         </li>
                         <li><a href="#">EXCLUSIVE</a>
                             <ul class="gnb_depth2">
@@ -59,73 +66,75 @@
                         <span>Cart(5)</span>
                     </a></li>
                 </ul>
-                <a href="#" class="Language"><img src="./images/korea.jpg" alt="언어"></a>
+                <a href="#" class="language"><img src="./images/korea.jpg" alt="언어"></a>
                 <div class="search_menu">
                     <a href="#" class="search"><img src="./images/search.jpg" alt="검색"></a>
                     <div class="search_sub_menu">
-                        <form action="#" method="get">
-                            <div>
+                        <form id="search_bar" action="#" method="get">
+                            <div class="search_bar_btn">
                                 <input type="text" placeholder="검색어를 입력하세요.">
                                 <a href="#"><img src="./images/submenu_search.png" alt="검색하기"></a>
                             </div>
                         </form>
                         <div class="best_g">
-                            <dl>
-                                <dt>추천 검색어</dt>
-                                <dd>1. 러브 퍼포레이트</dd>
-                                <dd>2. 빅토리아 블레이저</dd>
-                                <dd>3. 돌체 꾸오레</dd>
-                                <dd>4. 해피 로사</dd>
-                                <dd>5. 빅토리아 리베라</dd>
-                                <dd>6. 토트백</dd>
-                                <dd>7. 숄더백</dd>
-                                <dd>8. 노디노</dd>
-                                <dd>9. 14K</dd>
-                            </dl>
+                            <div class="recommended_search_terms">
+                                <h2>추천 검색어</h2>
+                                <ol>
+                                    <li>1. 러브 퍼포레이트</li>
+                                    <li>2. 빅토리아 블레이저</li>
+                                    <li>3. 돌체 꾸오레</li>
+                                    <li>4. 해피 로사</li>
+                                    <li>5. 빅토리아 리베라</li>
+                                    <li>6. 토트백</li>
+                                    <li>7. 숄더백</li>
+                                    <li>8. 노디노</li>
+                                    <li>9. 14K</li>
+                                </ol>
+                            </div>
                             <div class="best_product">
                                 <h2>베스트상품</h2>
-                                <div class="best_product_g">
-                                    <div class="best_product_bag">
+                                <ul class="best_product_g">
+                                    <li class="best_product_bag">
                                         <a href="#">
                                             <img src="./images/best1.jpg" alt="버킷백 미니">
-                                            <p>[라르고 시티] 버킷백 미니 M251MT4700U</p>
+                                            <h3>[라르고 시티] 버킷백 미니 M251MT4700U</h3>
                                         </a>
                                         <div class="best_price">
                                             <em>24%</em>
-                                            <p>￦104,820</p>
+                                            <span>￦104,820</span>
                                             <del>￦139,750</del>
                                         </div>
-                                        <em>5.0</em>(2)
+                                        <div class="horoscope"><em>5.0</em>(2)</div>
                                         <em>sale</em>
-                                    </div>
-                                    <div class="best_product__bag">
+                                    </li>
+                                    <li class="best_product_bag">
                                         <a href="#">
                                             <img src="./images/best2.jpg" alt="토트백 미듐">
-                                            <p>[러브 퍼포레이트] 토트백 미듐 M251MF4295Z</p>
+                                            <h3>[러브 퍼포레이트] 토트백 미듐 M251MF4295Z</h3>
                                         </a>
                                         <div class="best_price">
                                             <em>24%</em>
-                                            <p>￦286,560</p>
+                                            <span>￦286,560</span>
                                             <del>￦597,000</del>
                                         </div>
-                                        <em>5.0</em>(2)
+                                        <div class="horoscope"><em>5.0</em>(2)</div>
                                         <em>sale</em>
-                                    </div>
-                                    <div class="best_product_bag">
+                                    </li>
+                                    <li class="best_product_bag">
                                     <a href="#">
                                         <img src="./images/best3.jpg" alt="반지갑">
-                                        <p>[꾸오레 모모] 반지갑 M251WQ3370Z</p>
+                                        <h3>[꾸오레 모모] 반지갑 M251WQ3370Z</h3>
                                     </a>
                                     <div class="best_price">
                                         <em>20%</em>
-                                        <p>￦191,200</p>
+                                        <span>￦191,200</span>
                                         <del>￦239,000</del>
                                     </div>
-                                    <em>5.0</em>(2)
-                                    </div>
-                                </div>
+                                    <div class="horoscope"><em>5.0</em>(2)</div>
+                                    </li>
+                                </ul>
                             </div><!-- e:best_product -->
-                        </div><!-- e:best_g -->
+                        </div>
                     </div>
                 </div><!-- e:search_menu -->
             </div>
@@ -187,8 +196,8 @@
                 <h1>VIVTORIA TIMELESS MODERNITY</h1>
                 <p>일상에 스며드는 편안함, 빅토리아</p>
                 <div class="product_g">
-                    <div class="product">
-                        <div class="bag">
+                    <ul class="product">
+                        <li class="bag">
                             <div class="img_g">
                                 <a href="#" class="like"><img src="./images/like.png" alt="찜"></a>
                                 <a href="#"><img src="./images/brown_bag.jpg" alt="숄더백 브라운"></a>
@@ -199,8 +208,8 @@
                                 <del>￦639,000</del>
                             </div>
                             <p><em>NEW</em></p>
-                        </div>
-                        <div class="bag">
+                        </li>
+                        <li class="bag">
                             <div class="img_g">
                                 <a href="#" class="like"><img src="./images/like.png" alt="찜"></a>
                                 <a href="#"><img src="./images/black_bag.jpg" alt="숄더백 블랙"></a>
@@ -211,8 +220,8 @@
                                 <del>￦639,000</del>
                             </div>
                             <p><em>NEW</em></p>
-                        </div>
-                        <div class="bag">
+                        </li>
+                        <li class="bag">
                             <div class="img_g">
                                 <a href="#" class="like"><img src="./images/like.png" alt="찜"></a>
                                 <a href="#"><img src="./images/black_wallet.jpg" alt="카드홀더 블랙"></a>
@@ -223,8 +232,8 @@
                                 <del>￦197,000</del>
                             </div>
                             <p><em>NEW</em></p>
-                        </div>
-                        <div class="bag">
+                        </li>
+                        <li class="bag">
                             <div class="img_g">
                                 <a href="#" class="like"><img src="./images/like.png" alt="찜"></a>
                                 <a href="#"><img src="./images/brown_wallet.jpg" alt="카드홀더 브라운"></a>
@@ -235,8 +244,8 @@
                                 <del>￦197,000</del>
                             </div>
                             <p><em>NEW</em></p>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                     <a href="#" class="shoulderbag_page"><img src="./images/shoulder_bag.jpg" alt="숄더백"></a>
                 </div>
             </div><!-- e:victoria -->
@@ -245,20 +254,20 @@
                 <p>과장된 볼륨, 과감한 실루엣의 트렌디한 주얼리</p>
                 <div class="product_g">
                     <a href="#" class="jewelry_page"><img src="./images/jewelry.jpg" alt="쥬얼리"></a>
-                    <div class="product">
-                        <div class="jewelry">
-                                <div class="img_g">
-                                    <a href="#" class="like"><img src="./images/like.png" alt="찜"></a>
-                                    <a href="#"><img src="./images/necklace1.jpg" alt="로즈 네크리스"></a>
-                                </div>
-                                <h2><a href="#">[26SS][라 로사] 14K 로즈 네크리스 A261GN1101R4H</a></h2>
-                                <div class="price">
-                                    <p>￦1,385,100</p>
-                                    <del> ￦1,539,000</del>
-                                </div>
-                                <p><em>NEW</em></p>
+                    <ul class="product">
+                        <li class="jewelry">
+                            <div class="img_g">
+                                <a href="#" class="like"><img src="./images/like.png" alt="찜"></a>
+                                <a href="#"><img src="./images/necklace1.jpg" alt="로즈 네크리스"></a>
                             </div>
-                            <div class="jewelry">
+                            <h2><a href="#">[26SS][라 로사] 14K 로즈 네크리스 A261GN1101R4H</a></h2>
+                            <div class="price">
+                                <p>￦1,385,100</p>
+                                <del> ￦1,539,000</del>
+                            </div>
+                            <p><em>NEW</em></p>
+                        </li>
+                        <li class="jewelry">
                             <div class="img_g">
                                 <a href="#" class="like"><img src="./images/like.png" alt="찜"></a>
                                 <a href="#"><img src="./images/earrings1.jpg" alt="로즈 이어링"></a>
@@ -269,8 +278,8 @@
                                 <del>￦1,659,000</del>
                             </div>
                             <p><em>NEW</em></p>
-                        </div>
-                        <div class="jewelry">
+                        </li>
+                        <li class="jewelry">
                             <div class="img_g">
                                 <a href="#" class="like"><img src="./images/like.png" alt="찜"></a>
                                 <a href="#"><img src="./images/necklace2.jpg" alt="로즈 네크리스"></a>
@@ -281,8 +290,8 @@
                                 <del>￦1,419,000</del>
                             </div>
                             <p><em>NEW</em></p>
-                        </div>
-                        <div class="jewelry">
+                        </li>
+                        <li class="jewelry">
                             <div class="img_g">
                                 <a href="#" class="like"><img src="./images/like.png" alt="찜"></a>
                                 <a href="#"><img src="./images/earrings2.jpg" alt="로즈 이어링"></a>
@@ -293,36 +302,36 @@
                                 <del>￦1,469,000</del>
                             </div>
                             <p><em>NEW</em></p>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div><!-- e:jewelry -->
             <div class="high_jewelry">
                 <h1>METROCITY HIGH JEWELRY</h1>
                 <p>WEARABLE ART PIECE</p>
-                <div class="collection_g">
-                    <div class="collectionview_"><!-- bg img -->
+                <ul class="collection_g">
+                    <li class="collectionview_"><!-- bg img -->
                         <a href="#">
                             <h2>VISIONARY</h2>
                             <p>반짝이는 자신감으로 충만된 버저너리 아트피스들은 특별한 가치와 삶을 추구하는 분들을 위한 컬렉션</p>
                             <p><em>COLLECTION VIEW</em></p>
                         </a>
-                    </div>
-                    <div class="collectionview_"><!-- bg img -->
+                    </li>
+                    <li class="collectionview_"><!-- bg img -->
                         <a href="#">
                             <h2>MOTIF</h2>
                             <p>아름다움을 상징하는 모티프의 재해석, 세련된 현대 여성을 위한 모티베이션 아트피스</p>
                             <p><em>COLLECTION VIEW</em></p>
                         </a>
-                    </div>
-                    <div class="collectionview_"><!-- bg img -->
+                    </li>
+                    <li class="collectionview_"><!-- bg img -->
                         <a href="#">
                             <h2>DEBUTANTE</h2>
                             <p>일상 속에서 빛나는 본질적 아름다움, 나의 퍼스트 다이아몬드</p>
                             <p><em>COLLECTION VIEW</em></p>
                         </a>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div><!-- e:"high_jewelry -->
             <div class="membership"><!-- bg img -->
                 <a href="#">
@@ -335,35 +344,35 @@
         </main>
         <footer>
             <div class="f_top">
-                    <div id="fnb">
-                        <dl>
-                            <dt>METROCITY</dt>
-                            <dd><a href="#">브랜드소개</a></dd>
-                            <dd><a href="#">매장안내</a></dd>
-                            <dd><a href="#">개인정보취급방침</a></dd>
-                            <dd><a href="#">이용약관</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>HELP</dt>
-                            <dd><a href="#">고객센터</a></dd>
-                            <dd><a href="#">1:1문의하기</a></dd>
-                            <dd><a href="#">주문/배송조회</a></dd>
-                            <dd><a href="#">멤버십</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>MY PAGE</dt>
-                            <dd><a href="#">로그인</a></dd>
-                            <dd><a href="#">회원가입</a></dd>
-                            <dd><a href="#">아이디/비밀번호 찾기</a></dd>
-                        </dl>
-                        <dl class="sns">
-                            <dt>SNS</dt>
-                            <dd><a href="#"><img src="./images/facebook.jpg" alt="페북"></a></dd>
-                            <dd><a href="#"><img src="./images/instagram.jpg" alt="인스타"></a></dd>
-                            <dd><a href="#"><img src="./images/youtube.jpg" alt="유튜브"></a></dd>
-                            <dd><a href="#"><img src="./images/kakao_p.png" alt="카카오"></a></dd>
-                        </dl>
-                    </div>
+                <div id="fnb">
+                    <dl>
+                        <dt>METROCITY</dt>
+                        <dd><a href="#">브랜드소개</a></dd>
+                        <dd><a href="#">매장안내</a></dd>
+                        <dd><a href="#">개인정보취급방침</a></dd>
+                        <dd><a href="#">이용약관</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>HELP</dt>
+                        <dd><a href="#">고객센터</a></dd>
+                        <dd><a href="#">1:1문의하기</a></dd>
+                        <dd><a href="#">주문/배송조회</a></dd>
+                        <dd><a href="#">멤버십</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>MY PAGE</dt>
+                        <dd><a href="#">로그인</a></dd>
+                        <dd><a href="#">회원가입</a></dd>
+                        <dd><a href="#">아이디/비밀번호 찾기</a></dd>
+                    </dl>
+                    <dl class="sns">
+                        <dt>SNS</dt>
+                        <dd><a href="#"><img src="./images/facebook.jpg" alt="페북"></a></dd>
+                        <dd><a href="#"><img src="./images/instagram.jpg" alt="인스타"></a></dd>
+                        <dd><a href="#"><img src="./images/youtube.jpg" alt="유튜브"></a></dd>
+                        <dd><a href="#"><img src="./images/kakao_p.png" alt="카카오"></a></dd>
+                    </dl>
+                </div>
                 <div id="center">
                     <h2>ONLINE CS CENTER</h2>
                     <p><em>1566-1165</em></p>
