@@ -1,16 +1,24 @@
 #wrap {}
 /* ========================================header */
-#wrap header {}
-#wrap header #h_left {}
+#wrap header {min-width:1280px; height:101px;
+    position:relative;
+    display:flex; flex-flow: row nowrap;
+    justify-content: center; align-items: center;
+    /* overflow: hidden; */
+    background-color: chartreuse;
+}
+#wrap header #h_left {
+    display:flex; flex-flow: row nowrap;
+}
 #wrap header #h_left h1 {}
 #wrap header #h_left h1 a {}
-#wrap header #h_left h1 a img {}
+#wrap header #h_left h1 a img {width: 140px; /* height:100; */}
 /* ========================================header_gnb */
 #wrap header #h_left nav {}
-#wrap header #h_left nav #gnb {}
+#wrap header #h_left nav #gnb {display:flex; flex-flow: row nowrap;}
 #wrap header #h_left nav #gnb li {}
-#wrap header #h_left nav #gnb li a {}
-#wrap header #h_left nav #gnb li a img {}
+#wrap header #h_left nav #gnb li a {font-size: 0.81rem; margin: 10px; background-color: aqua;}
+#wrap header #h_left nav #gnb li a img {width: 90px;}
 #wrap header #h_left nav #gnb li .visionary_sub_menu {}
 #wrap header #h_left nav #gnb li .visionary_sub_menu .gnb_depth2 {}
 #wrap header #h_left nav #gnb li .visionary_sub_menu .gnb_depth2 li {}
@@ -19,40 +27,48 @@
 #wrap header #h_left nav #gnb li .visionary_sub_menu .gnb_depth2 li .gnb_depth3 li {}
 #wrap header #h_left nav #gnb li .visionary_sub_menu .gnb_depth2 li .gnb_depth3 li a {}
 #wrap header #h_left nav #gnb li .visionary_sub_menu .visionary_img {}
-#wrap header #h_left nav #gnb li .visionary_sub_menu .visionary_img a {}
+#wrap header #h_left nav #gnb li .visionary_sub_menu .visionary_img a {display: none;}
 #wrap header #h_left nav #gnb li .visionary_sub_menu .visionary_img a img {}
-#wrap header #h_left nav #gnb li .gnb_depth2 {}
+#wrap header #h_left nav #gnb li .gnb_depth2 {display: none;}
 #wrap header #h_left nav #gnb li .gnb_depth2 li {}
 #wrap header #h_left nav #gnb li .gnb_depth2 li a {}
 #wrap header #h_left nav #gnb li {}     /* 위 메트로시티 비저너리 로고 태그와 겹침 , 수정 필요*/
 #wrap header #h_left nav #gnb li a {}
 /* ========================================header_right */
-#wrap header #h_right {}
-#wrap header #h_right #my_menu {}
+#wrap header #h_right {
+    display:flex; flex-flow: row nowrap;
+    background-color: yellow;
+}
+#wrap header #h_right #my_menu {display:flex; flex-flow: row nowrap;}
 #wrap header #h_right #my_menu li {}
 #wrap header #h_right #my_menu li a {}
-#wrap header #h_right #my_menu li span {}
+#wrap header #h_right #my_menu li span {display:flex; flex-flow: column nowrap;}
 #wrap header #h_right .language_g {}
 #wrap header #h_right .language_g .language {}
-#wrap header #h_right .language_g .language img {}
+#wrap header #h_right .language_g .language img {width: 24px;}
 #wrap header #h_right .language_list {}
 #wrap header #h_right .language_list a {}
 #wrap header #h_right .language_list a img {}
-/* ========================================header_search& srarch_box */
+#wrap header #h_right .language_list a img {display: none;}
+/* ========================================header_search */
 #wrap header #h_right .search_menu {}
 #wrap header #h_right .search_menu .search {}
-#wrap header #h_right .search_menu .search img {}
-#wrap header #h_right .search_menu .search_sub_menu {}
+#wrap header #h_right .search_menu .search img {width: 16px;}
+#wrap header #h_right .search_menu .search img:last-child {display: none;}
+/* ========================================header_search& srarch_box */
+#wrap header #h_right .search_menu .search_sub_menu {display: none;}
 #wrap header #h_right .search_menu .search_sub_menu #search_bar {}
 #wrap header #h_right .search_menu .search_sub_menu #search_bar #search_bar {}
 #wrap header #h_right .search_menu .search_sub_menu #search_bar #search_bar #search_txt {}
 #wrap header #h_right .search_menu .search_sub_menu #search_bar #search_bar #search_btn {}
 #wrap header #h_right .search_menu .search_sub_menu #search_bar #search_bar #search_btn img {}
+/* ========================================header_search (추천검색어)*/
 #wrap header #h_right .search_menu .search_sub_menu .best_g {}
 #wrap header #h_right .search_menu .search_sub_menu .best_g .recommended_search_terms {}
 #wrap header #h_right .search_menu .search_sub_menu .best_g .recommended_search_terms h2 {}
 #wrap header #h_right .search_menu .search_sub_menu .best_g .recommended_search_terms h2 .list {}
 #wrap header #h_right .search_menu .search_sub_menu .best_g .recommended_search_terms h2 .list li {}
+/* ========================================header_search& (베스트상품)*/
 #wrap header #h_right .search_menu .search_sub_menu .best_g .best_product {}
 #wrap header #h_right .search_menu .search_sub_menu .best_g .best_product h2 {}
 #wrap header #h_right .search_menu .search_sub_menu .best_g .best_product .best_product_g {}
