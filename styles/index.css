@@ -1,9 +1,9 @@
 #wrap {}
 /* ========================================header */
-#wrap header {min-width:1280px; height:101px;
-    position:relative;
+#wrap header {
+    min-width:1280px; height:101px; position:relative;
     display:flex; flex-flow: row nowrap;
-    justify-content: center; align-items: center;
+    justify-content:space-between; align-items: center;
     /* overflow: hidden; */
     background-color: chartreuse;
 }
@@ -29,6 +29,8 @@
 #wrap header #h_left nav #gnb li .visionary_sub_menu .visionary_img {}
 #wrap header #h_left nav #gnb li .visionary_sub_menu .visionary_img a {display: none;}
 #wrap header #h_left nav #gnb li .visionary_sub_menu .visionary_img a img {}
+#wrap header #h_left nav #gnb li {}
+#wrap header #h_left nav #gnb li a {}
 #wrap header #h_left nav #gnb li .gnb_depth2 {display: none;}
 #wrap header #h_left nav #gnb li .gnb_depth2 li {}
 #wrap header #h_left nav #gnb li .gnb_depth2 li a {}
@@ -41,8 +43,16 @@
 }
 #wrap header #h_right #my_menu {display:flex; flex-flow: row nowrap;}
 #wrap header #h_right #my_menu li {}
-#wrap header #h_right #my_menu li a {}
-#wrap header #h_right #my_menu li span {display:flex; flex-flow: column nowrap;}
+#wrap header #h_right #my_menu li .login {}
+#wrap header #h_right #my_menu li .join {}
+#wrap header #h_right #my_menu li .cart {}
+#wrap header #h_right #my_menu li span {display:flex; flex-flow:column nowrap; display:none;}
+#wrap header #h_right #my_menu li span:nth-child(1) {}
+#wrap header #h_right #my_menu li span:nth-child(2) {}
+#wrap header #h_right #my_menu li span:nth-child(3) {}
+#wrap header #h_right #my_menu li span:nth-child(4) {}
+#wrap header #h_right #my_menu li span:nth-child(5) {}
+#wrap header #h_right #my_menu li span:nth-child(6) {}
 #wrap header #h_right .language_g {}
 #wrap header #h_right .language_g .language {}
 #wrap header #h_right .language_g .language img {width: 24px;}
@@ -86,3 +96,16 @@
 #wrap header #h_right .search_menu .search_sub_menu .best_g .best_product .best_product_g .best_product_bag span {}
 /* ========================================main */
 /* ========================================footer */
+#wrap footer {}
+#wrap footer .f_top {padding: 15px;}
+#wrap footer .f_top #fnb {display: flex;}
+#wrap footer .f_top #fnb dl {}
+#wrap footer .f_top #fnb dl dt {font-size: 0.81rem;}
+#wrap footer .f_top #fnb dl dd {font-size: 0.69rem;}
+#wrap footer .f_top #fnb dl dd a {}
+#wrap footer .f_top #fnb .sns {}
+#wrap footer .f_top #fnb .sns dt {}
+#wrap footer .f_top #fnb .sns dt a {}
+#wrap footer .f_top #fnb .sns dd a {}
+#wrap footer .f_top #fnb .sns dd a img {width:20%;}
+
