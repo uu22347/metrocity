@@ -8,7 +8,8 @@
     background-color: chartreuse;
 }
 #wrap header #h_left {
-    display:flex; flex-flow: row nowrap;
+    display:flex; flex-flow: row nowrap; align-items: center;
+    background-color: aqua;
 }
 #wrap header #h_left h1 {}
 #wrap header #h_left h1 a {}
@@ -16,37 +17,37 @@
 /* ========================================header_gnb */
 #wrap header #h_left nav {}
 #wrap header #h_left nav #gnb {display:flex; flex-flow: row nowrap;}
-#wrap header #h_left nav #gnb li {}
-#wrap header #h_left nav #gnb li a {font-size: 0.81rem; margin: 10px; background-color: aqua;}
-#wrap header #h_left nav #gnb li a img {width: 90px;}
-#wrap header #h_left nav #gnb li .visionary_sub_menu {}
-#wrap header #h_left nav #gnb li .visionary_sub_menu .gnb_depth2 {}
-#wrap header #h_left nav #gnb li .visionary_sub_menu .gnb_depth2 li {}
-#wrap header #h_left nav #gnb li .visionary_sub_menu .gnb_depth2 li a {}
-#wrap header #h_left nav #gnb li .visionary_sub_menu .gnb_depth2 li .gnb_depth3 {}
-#wrap header #h_left nav #gnb li .visionary_sub_menu .gnb_depth2 li .gnb_depth3 li {}
-#wrap header #h_left nav #gnb li .visionary_sub_menu .gnb_depth2 li .gnb_depth3 li a {}
-#wrap header #h_left nav #gnb li .visionary_sub_menu .visionary_img {}
-#wrap header #h_left nav #gnb li .visionary_sub_menu .visionary_img a {display: none;}
-#wrap header #h_left nav #gnb li .visionary_sub_menu .visionary_img a img {}
-#wrap header #h_left nav #gnb li {}
-#wrap header #h_left nav #gnb li a {}
-#wrap header #h_left nav #gnb li .gnb_depth2 {display: none;}
-#wrap header #h_left nav #gnb li .gnb_depth2 li {}
-#wrap header #h_left nav #gnb li .gnb_depth2 li a {}
-#wrap header #h_left nav #gnb li {}     /* 위 메트로시티 비저너리 로고 태그와 겹침 , 수정 필요*/
-#wrap header #h_left nav #gnb li a {}
+#wrap header #h_left nav #gnb > li {}
+#wrap header #h_left nav #gnb > li a {font-size: 0.81rem; margin: 10px; }
+#wrap header #h_left nav #gnb > li a img {width: 90px;}
+#wrap header #h_left nav #gnb > li .visionary_sub_menu {}
+#wrap header #h_left nav #gnb > li .visionary_sub_menu > .gnb_depth2 > li {}
+#wrap header #h_left nav #gnb > li .visionary_sub_menu > .gnb_depth2 > li a {}
+#wrap header #h_left nav #gnb > li .visionary_sub_menu > .gnb_depth2 > li .gnb_depth3 {}
+#wrap header #h_left nav #gnb > li .visionary_sub_menu > .gnb_depth2 > li .gnb_depth3 li {}
+#wrap header #h_left nav #gnb > li .visionary_sub_menu > .gnb_depth2 > li .gnb_depth3 li a {}
+#wrap header #h_left nav #gnb > li .visionary_sub_menu .visionary_img {}
+#wrap header #h_left nav #gnb > li .visionary_sub_menu .visionary_img a {display: none;}
+#wrap header #h_left nav #gnb > li .visionary_sub_menu .visionary_img a img {}
+#wrap header #h_left nav #gnb > li {}
+#wrap header #h_left nav #gnb > li a {}
+#wrap header #h_left nav #gnb > li .gnb_depth2 {display:none}
+#wrap header #h_left nav #gnb > li .gnb_depth2 li {}
+#wrap header #h_left nav #gnb > li .gnb_depth2 li a {}
+#wrap header #h_left nav #gnb > li .gnb_depth2 li a .gnb_depth3 {}
+#wrap header #h_left nav #gnb > li .gnb_depth2 li a .gnb_depth3 li {}
+#wrap header #h_left nav #gnb > li .gnb_depth2 li a .gnb_depth3 li a {}
 /* ========================================header_right */
 #wrap header #h_right {
     display:flex; flex-flow: row nowrap;
     background-color: yellow;
 }
 #wrap header #h_right #my_menu {display:flex; flex-flow: row nowrap;}
-#wrap header #h_right #my_menu li {}
+#wrap header #h_right #my_menu li {font-size: 0.81rem;}
 #wrap header #h_right #my_menu li .login {}
 #wrap header #h_right #my_menu li .join {}
 #wrap header #h_right #my_menu li .cart {}
-#wrap header #h_right #my_menu li span {display:flex; flex-flow:column nowrap; display:none;}
+#wrap header #h_right #my_menu li span {display:flex; flex-flow:column nowrap;}
 #wrap header #h_right #my_menu li span:nth-child(1) {}
 #wrap header #h_right #my_menu li span:nth-child(2) {}
 #wrap header #h_right #my_menu li span:nth-child(3) {}
@@ -56,10 +57,10 @@
 #wrap header #h_right .language_g {}
 #wrap header #h_right .language_g .language {}
 #wrap header #h_right .language_g .language img {width: 24px;}
-#wrap header #h_right .language_list {}
+#wrap header #h_right .language_list {display:none;}
 #wrap header #h_right .language_list a {}
 #wrap header #h_right .language_list a img {}
-#wrap header #h_right .language_list a img {display: none;}
+#wrap header #h_right .language_list a img {}
 /* ========================================header_search */
 #wrap header #h_right .search_menu {}
 #wrap header #h_right .search_menu .search {}
@@ -84,7 +85,7 @@
 #wrap header #h_right .search_menu .search_sub_menu .best_g .best_product .best_product_g {}
 #wrap header #h_right .search_menu .search_sub_menu .best_g .best_product .best_product_g .best_product_bag {}
 #wrap header #h_right .search_menu .search_sub_menu .best_g .best_product .best_product_g .best_product_bag a {}
-#wrap header #h_right .search_menu .search_sub_menu .best_g .best_product .best_product_g .best_product_bag a img {}
+#wrap header #h_right .search_menu .search_sub_menu .best_g .best_product .best_product_g .best_product_bag a img {width:180px;}
 #wrap header #h_right .search_menu .search_sub_menu .best_g .best_product .best_product_g .best_product_bag a h3 {}
 #wrap header #h_right .search_menu .search_sub_menu .best_g .best_product .best_product_g .best_product_bag .best_price {}
 #wrap header #h_right .search_menu .search_sub_menu .best_g .best_product .best_product_g .best_product_bag .best_price em {}
@@ -96,16 +97,40 @@
 #wrap header #h_right .search_menu .search_sub_menu .best_g .best_product .best_product_g .best_product_bag span {}
 /* ========================================main */
 /* ========================================footer */
-#wrap footer {}
-#wrap footer .f_top {padding: 15px;}
-#wrap footer .f_top #fnb {display: flex;}
+#wrap footer {width:1280px; margin: 0 auto;}
+/* ========================================footer 1행 */
+#wrap footer .f_top {
+    display: flex; 
+}
+#wrap footer .f_top #fnb {display: flex; gap:100px;}
 #wrap footer .f_top #fnb dl {}
-#wrap footer .f_top #fnb dl dt {font-size: 0.81rem;}
-#wrap footer .f_top #fnb dl dd {font-size: 0.69rem;}
-#wrap footer .f_top #fnb dl dd a {}
+#wrap footer .f_top #fnb dl dt {font-size: 0.81rem; margin-bottom:20px;}
+#wrap footer .f_top #fnb dl dd {font-size: 0.69rem; margin:8px 0;}
+#wrap footer .f_top #fnb dl dd a {color:#999;}
 #wrap footer .f_top #fnb .sns {}
 #wrap footer .f_top #fnb .sns dt {}
-#wrap footer .f_top #fnb .sns dt a {}
+#wrap footer .f_top #fnb .sns dd {}
 #wrap footer .f_top #fnb .sns dd a {}
-#wrap footer .f_top #fnb .sns dd a img {width:20%;}
+#wrap footer .f_top #fnb .sns dd a img {width:20%; }
+#wrap footer .f_top #center {}
+#wrap footer .f_top #center h2 {font-size: 0.81rem; margin-bottom:20px;}
+#wrap footer .f_top #center .number {font-size: 0.81rem;}
+#wrap footer .f_top #center .email {font-size: 0.81rem; margin:8px 0;}
+#wrap footer .f_top #center ul {}
+#wrap footer .f_top #center ul li {
+    margin:5px 0;
+    font-size: 0.56rem; color:#999;
+}
+/* ========================================footer 2행 */
+#wrap footer .f_bottom {
+    background-color:#F1F1EF; display: flex; padding-bottom:30px;}
+#wrap footer .f_bottom .company {padding-right:30px;}
+#wrap footer .f_bottom .company h2 {font-size: 0.81rem; padding: 20px 0;}
+#wrap footer .f_bottom .company address {font-size: 0.69rem; line-height:1.3; color:#999;}
+#wrap footer .f_bottom .company address a {background-color: #999; color: #fff;}
+#wrap footer .f_bottom .insurance {}
+#wrap footer .f_bottom .insurance h2 {font-size: 0.81rem; padding: 20px 0;}
+#wrap footer .f_bottom .insurance p {font-size: 0.69rem; line-height:1.5; color:#999;}
+#wrap footer .f_bottom .insurance p a {background-color: #999; color: #fff;}
+
 
